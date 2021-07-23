@@ -8,7 +8,7 @@
 import UIKit
 
 class Response {
-    var textResponse = ""
+    var textResponse = " "
     var sliderResponse = 0.0
 }
 

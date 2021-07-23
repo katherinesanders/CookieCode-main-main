@@ -9,6 +9,8 @@ import UIKit
 
 class RateOkViewController: UIViewController {
     
+    var nextVC = CalendarViewController()
+    
     //text field is created as an outlet
     @IBOutlet weak var rateOkTextField: UITextField!
     
@@ -19,13 +21,18 @@ class RateOkViewController: UIViewController {
     }
     
     
-    @IBAction func enterOkButton(_ sender: UIButton) {
+
+    @IBAction func enterOkButton(_ sender: Any) {
         let userOkResponse = Response()
         
         if let responseText = rateOkTextField.text {
             userOkResponse.textResponse = responseText
         }
+        
+        nextVC.ratingsAndResponses.append(userOkResponse)
+        nextVC.table.reloadData()
     }
+    
     
     /*
     // MARK: - Navigation

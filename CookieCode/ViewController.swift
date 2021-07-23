@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var slider: UISlider!
     
-    @IBOutlet weak var test: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +40,8 @@ class ViewController: UIViewController {
          
                     self.present(inputView, animated: true, completion: nil)
                 }
-
+        
+        
     }
     
     //update tracker page

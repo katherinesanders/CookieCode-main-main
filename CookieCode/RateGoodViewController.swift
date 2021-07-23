@@ -9,6 +9,8 @@ import UIKit
 
 class RateGoodViewController: UIViewController {
 
+    var nextVC = CalendarViewController()
+    
     @IBOutlet weak var rateGoodTextField: UITextField!
     
     override func viewDidLoad() {
@@ -24,6 +26,9 @@ class RateGoodViewController: UIViewController {
         if let responseGoodText = rateGoodTextField.text {
             userGoodResponse.textResponse = responseGoodText
         }
+        
+        nextVC.ratingsAndResponses.append(userGoodResponse)
+        
     }
     
     /*

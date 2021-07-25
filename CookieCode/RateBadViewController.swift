@@ -27,7 +27,7 @@ class RateBadViewController: UIViewController {
             userBadResponse.textResponse = responseBadText
         }
 
-        nextVC.ratingsAndResponses.append(userBadResponse)
+        //nextVC.ratingsAndResponses.append(userBadResponse)
         
     }
     

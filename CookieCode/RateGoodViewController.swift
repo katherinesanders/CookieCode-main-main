@@ -27,7 +27,7 @@ class RateGoodViewController: UIViewController {
             userGoodResponse.textResponse = responseGoodText
         }
         
-        nextVC.ratingsAndResponses.append(userGoodResponse)
+        //nextVC.ratingsAndResponses.append(userGoodResponse)
         
     }
     

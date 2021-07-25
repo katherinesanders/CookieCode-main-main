@@ -9,6 +9,7 @@ import UIKit
 
 class MindfulnessViewController: UIViewController {
 
+
     @IBOutlet weak var imageTheScience: UIImageView!
     @IBAction func buttonTheScience(_ sender: UIButton) {
         UIApplication.shared.open(URL(string: "https://www.coursera.org/learn/the-science-of-well-being")! as URL, options: [:], completionHandler: nil)
